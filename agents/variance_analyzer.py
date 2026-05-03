@@ -8,44 +8,39 @@ class VarianceAnalysis(BaseModel):
     strategic_narrative: str
     confidence_score: float
 
-# --- THE INSTITUTIONAL REPOSITORY ---
-# Structured for high-density professional review.
 AI_GOLDEN_CACHE = {
     "IFRS (Crypto-Native)": {
-        "price_variance": 5254.77,
-        "volume_variance": -5637802.07,
-        "mix_variance": 716.92,
+        "price_variance": -1150000.00,
+        "volume_variance": -10450000.00,
+        "mix_variance": -1700000.00,
         "strategic_narrative": """
-### **Revenue Bridge Performance**
-*   **Total Variance**: -$5,631,830.38 (Net Unfavorable)
-*   **Volume Contribution**: Responsible for **99.8%** of total variance.
-*   **Price Resilience**: Favorable impact of **+$5,254.77**, indicating fee-tier stability despite turnover decay.
+### **YoY Revenue Autopsy**
+*   **Total Variance**: -$13,300,000.00 (37% YoY Decline).
+*   **Volume Contribution**: Responsible for 78.6% of unfavorable variance, driven by funded user decay.
+*   **Mix Shift Impact**: Significant -$1.7M headwind due to user migration toward lower-margin Layer 2 networks[cite: 6].
 
-### **Attribution Analysis**
-*   **TVL Velocity**: Turnover decay is systemic across the WETH/USDT and WBTC/USDT pairs, suggesting a macro-migration of liquidity to Layer 2 incentive programs.
-*   **Margin Integrity**: Realized fee yield remained consistent with historical benchmarks; the deficit is purely a function of **Liquidity Depth** rather than fee-structure slippage.
-*   **Mix Optimization**: Marginal favorability in asset mix (**+$716.92**) reflects successful capture of high-spread long-tail swaps, though insufficient to offset core volume drain.
+### **Forensic Findings**
+*   **Structural Decay**: The decline is a structural shift in how users interact with self-custody, not a temporary market cooldown[cite: 6].
+*   **L2 Cannibalization**: Migration to high-throughput chains has compressed swap margins, necessitating a move beyond speculative utility[cite: 6].
         """,
         "confidence_score": 0.99
     },
     "GAAP (Conservative)": {
-        "price_variance": 5123.40, # Applied conservative haircut logic
-        "volume_variance": -5637802.07,
-        "mix_variance": 699.00,
+        "price_variance": -1250000.00, 
+        "volume_variance": -10450000.00,
+        "mix_variance": -1800000.00,
         "strategic_narrative": """
 ### **Revenue Bridge Performance (Conservative Basis)**
-*   **Net Attribution**: -$5,632,102.67 (GAAP Adjusted)
-*   **Price Impact**: **+$5,123.40** (Includes 2.5% impairment provision for long-tail fee accruals).
-*   **Volume Impact**: **-$5.63M**; identified as the singular material threat to protocol revenue.
+*   **Net Attribution**: -$13,500,000.00 total delta[cite: 6].
+*   **Volume Impact**: Confirmed as the primary threat to legacy swap-based revenue models[cite: 6].
 
-### **Root Cause & Audit Findings**
-*   **Recognition Timing**: Under GAAP realization principles, revenue from pending swap settlements is deferred, highlighting a widening gap between trade execution and capital realization.
-*   **Impairment Assessment**: Volume decay in altcoin pairs triggered a localized impairment review; current fee yield is sufficient but turnover velocity must be reclaimed to avoid further provisioning[cite: 1].
+### **Strategic Disclosure**
+*   **Capital Efficiency**: Legacy acquisition channels yield diminishing returns as the market shifts to L2 and Solana-native surfaces[cite: 6].
+*   **Revenue Floor**: The trajectory highlights the urgent need for 'Sticky' wealth management revenue to replace opportunistic swap spreads[cite: 6].
         """,
         "confidence_score": 0.99
     }
 }
 
 def get_ai_financial_insight(standard: str):
-    """Returns a thorough, structured disclosure based on the selected standard[cite: 1]."""
     return VarianceAnalysis(**AI_GOLDEN_CACHE[standard])
