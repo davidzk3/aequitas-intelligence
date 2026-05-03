@@ -1,5 +1,11 @@
-venv/
-.env
 __pycache__/
+.venv/
+.env
 *.pyc
 .streamlit/config.toml
+
+venv/
+.venv/
+__pycache__/
+.env
+.streamlit/
