@@ -15,8 +15,24 @@ st.markdown("""
     .report-subtitle { font-size: 1.2rem; color: #64748b; margin-bottom: 25px; }
     .section-header { border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 30px; font-weight: 700; color: #0f172a; }
     .rationale-box { background-color: #ffffff; border-left: 5px solid #2563eb; padding: 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
-    /* Minimize spacing between navigation links */
-    .stPageLink { margin-bottom: -15px; }
+    
+    /* Interactive Module Card Styling */
+    div[data-testid="stPageLink"] a {
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 8px !important;
+        padding: 12px 16px !important;
+        background-color: #ffffff !important;
+        transition: all 0.3s ease !important;
+        margin-bottom: 10px !important;
+        text-decoration: none !important;
+        display: flex !important;
+    }
+    div[data-testid="stPageLink"] a:hover {
+        border-color: #2563eb !important;
+        background-color: #f8fafc !important;
+        transform: translateX(5px) !important;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1) !important;
+    }
     </style>
     """, unsafe_allow_html=True)
 
