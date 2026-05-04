@@ -24,44 +24,34 @@ st.markdown("<div class='report-subtitle'>Fiscal Year 2026 | Strategic Recovery 
 st.write("---")
 
 # --- EXECUTIVE SUMMARY & EXTERNAL REFS ---
-col_lh, col_rh = st.columns([2, 1])
+st.markdown("### **I. Q1 Recovery Briefing**")
+st.markdown("""
+This terminal serves as an analytical workspace for the Aequitas protocol. Following the identification of a 
+**37% YoY revenue contraction (c. $13.3M deficit)**, this environment provides a data-driven framework to transition the protocol from transactional 'Swap' utility to a **Primary Financial Residency** model.
+""")
 
-with col_lh:
-    st.markdown("### **I. Q1 Recovery Briefing**")
-    st.markdown("""
-    This terminal serves as the official analytical workspace for the Aequitas protocol. Following the identification of a 
-    **37% YoY revenue contraction (c. $13.3M deficit)**, this environment provides the data-driven framework required 
-    to transition the protocol from transactional 'Swap' utility to a **Primary Financial Residency** model.
-    """)
-    
-    st.markdown("<div class='section-header'>II. Reference Financials & Strategic Documentation</div>", unsafe_allow_html=True)
-    st.write("")
-    
-    # Official links for the reviewer
-    st.markdown("""
-    **External Reference Data (NYSE: EXOD)**
-    *   📄 **[Exodus Investor Relations](https://www.exodus.com/investors/)**: Primary source for quarterly and annual financial reporting.
-    *   📊 **[SEC Filings (Form 10-K/10-Q)](https://www.sec.gov/edgar/browse/?CIK=1821534)**: Audited financial statements used for the 2026 deficit baseline.
-    """)
+# --- SECTION II: EXTERNAL DATA ---
+st.markdown("<div class='section-header'>II. External Reference Financials</div>", unsafe_allow_html=True)
+st.write("")
+st.markdown("""
+**Public Reporting (NYSE: EXOD)**
+*   📄 **[Exodus Investor Relations](https://www.exodus.com/investors/)**: Primary source for quarterly and annual financial reporting.
+*   📊 **[SEC Filings (Form 10-K/10-Q)](https://www.sec.gov/edgar/browse/?CIK=1821534)**: Audited financial statements used for the 2026 deficit baseline.
+""")
 
-    # Arranged as a professional link directory
-    st.markdown(f"""
-    *   📘 **[Flux Revenue Autopsy (Forensic Reporting)](#)**: Detailed PVM attribution and fee-tier yield analysis.
-    *   🎯 **[2026 GTM Blueprint (Strategic Framework)](#)**: Rational for the 'Wealth Management' pivot and capital allocation.
-    *   🛡️ **[Treasury Guard Protocols (Risk Mandate)](#)**: Solvency stress-testing and delta-neutral hedging requirements.
-    """)
+# --- SECTION III: INTERNAL MODULES ---
+st.markdown("<div class='section-header'>III. Analytical Workspaces & Modules</div>", unsafe_allow_html=True)
+st.write("")
+st.markdown(f"""
+*   📘 **[Flux Revenue Autopsy (Forensic Reporting)](#)**: Detailed PVM attribution and fee-tier yield analysis.
+*   🎯 **[2026 GTM Blueprint (Strategic Framework)](#)**: Rationale for the 'Wealth Management' pivot and capital allocation.
+*   🛡️ **[Treasury Guard Protocols (Risk Mandate)](#)**: Solvency stress-testing and delta-neutral hedging requirements.
+""")
 
-with col_rh:
-    st.markdown("### **Operational Integrity**")
-    st.success("""
-    **System Status: Active**
-    *   **Population Depth**: 100,000 Records
-    *   **Audit Trail**: IFRS/GAAP Compliant
-    """)
-    st.info("💡 Use the sidebar to navigate between Forensic (Flux) and Strategic (Growth) terminals.")
+st.info("💡 **Navigation Note:** Use the sidebar to toggle between the Forensic (Flux) and Strategic (Growth) terminals.")
 
 # --- PRODUCT RATIONALE ---
-st.markdown("<div class='section-header'>III. Core Analytical Rationale</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-header'>IV. Core Analytical Rationale</div>", unsafe_allow_html=True)
 st.write("")
 
 st.markdown("""
