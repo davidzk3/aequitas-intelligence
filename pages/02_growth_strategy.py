@@ -14,9 +14,25 @@ st.markdown("""
     .main-header { font-size: 2.2rem; font-weight: 800; color: #0f172a; margin-bottom: 10px; }
     .strategy-block { 
         background-color: #ffffff; border-radius: 8px; padding: 25px; 
-        border: 1px solid #e2e8f0; border-top: 5px solid #2563eb; margin-bottom: 25px; 
+        border: 1px solid #e2e8f0; border-top: 5px solid #10b981; margin-bottom: 25px; 
     }
     .metric-card { background-color: #f8fafc; border: 1px solid #e2e8f0; padding: 15px; border-radius: 8px; }
+    /* Action Button Styling */
+    div.stButton > button:first-child {
+        background-color: #10b981;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #059669;
+        box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+        transform: translateY(-2px);
+    }
     </style>
     """, unsafe_allow_html=True)
 

@@ -17,9 +17,21 @@ st.markdown("""
         background-color: #ffffff; border-radius: 8px; padding: 25px; 
         border: 1px solid #e2e8f0; border-top: 5px solid #ef4444; margin-bottom: 25px; 
     }
-    .analysis-card { 
-        background-color: #ffffff; border: 1px solid #e2e880; padding: 20px; 
-        border-radius: 8px; border-left: 5px solid #0f172a; margin-bottom: 20px; 
+    /* Action Button Styling */
+    div.stButton > button:first-child {
+        background-color: #ef4444;
+        color: white;
+        border: none;
+        padding: 12px 28px;
+        border-radius: 8px;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        width: 100%;
+    }
+    div.stButton > button:first-child:hover {
+        background-color: #dc2626;
+        box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+        transform: translateY(-2px);
     }
     </style>
     """, unsafe_allow_html=True)
