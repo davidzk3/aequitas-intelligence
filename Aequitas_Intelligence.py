@@ -1,12 +1,5 @@
 import streamlit as st
 
-# --- PAGE CONFIGURATION ---
-st.set_page_config(
-    page_title="Aequitas Intelligence Hub | Executive Briefing", 
-    page_icon="📊", 
-    layout="wide"
-)
-
 # --- PROFESSIONAL STYLING ---
 st.markdown("""
     <style>
@@ -28,7 +21,7 @@ st.write("---")
 # --- EXECUTIVE SUMMARY & EXTERNAL REFS ---
 st.markdown("### **I. Q1 Recovery Briefing**")
 st.markdown("""
-This terminal serves as an nalytical workspace for the Aequitas protocol. Following the identification of a 
+This terminal serves as an analytical workspace for the Aequitas protocol. Following the identification of a 
 **37% YoY revenue contraction (c. $13.3M deficit)**, this environment provides a data-driven framework
 to transition the protocol from transactional 'Swap' utility to a **Primary Financial Residency** model.
 """)
