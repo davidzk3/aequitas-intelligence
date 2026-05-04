@@ -40,15 +40,16 @@ st.markdown("""
 """)
 
 # --- SECTION III: INTERNAL MODULES ---
-st.markdown("<div class='section-header'>III. Analytical Workspaces & Modules</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-header'>III. Analytical Workspaces & Intelligence Modules</div>", unsafe_allow_html=True)
 st.write("")
-st.markdown(f"""
-*   📘 **[Flux Revenue Autopsy (Forensic Reporting)](#)**: Detailed PVM attribution and fee-tier yield analysis.
-*   🎯 **[2026 GTM Blueprint (Strategic Framework)](#)**: Rationale for the 'Wealth Management' pivot and capital allocation.
-*   🛡️ **[Treasury Guard Protocols (Risk Mandate)](#)**: Solvency stress-testing and delta-neutral hedging requirements.
-""")
 
-st.info("💡 **Navigation Note:** Use the sidebar to toggle between the Forensic (Flux) and Strategic (Growth) terminals.")
+# Internal navigation links - verify these match your exact filenames in the /pages folder
+st.page_link("pages/01_flux_terminal.py", label="Flux Revenue Autopsy (Forensic Reporting): Detailed PVM attribution and fee-tier yield analysis.", icon="📘")
+st.page_link("pages/02_growth_strategy.py", label="2026 GTM Blueprint (Strategic Framework): Rationale for the 'Wealth Management' pivot and capital allocation.", icon="🎯")
+st.page_link("pages/03_risk_guard.py", label="Treasury Guard Protocols (Risk Mandate): Solvency stress-testing and delta-neutral hedging requirements.", icon="🛡️")
+
+st.write("")
+st.info("💡 **Navigation Note:** Use the sidebar or the clickable modules above to switch between terminals.")
 
 # --- PRODUCT RATIONALE ---
 st.markdown("<div class='section-header'>IV. Core Analytical Rationale</div>", unsafe_allow_html=True)
