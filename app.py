@@ -46,10 +46,10 @@ st.markdown("""
 st.markdown("<div class='section-header'>III. Analytical Workspaces & Modules</div>", unsafe_allow_html=True)
 st.write("")
 
-# Updated path to match your actual filename: 03_risk_terminal.py
-st.page_link("pages/01_flux_terminal.py", label="Flux Revenue Autopsy (Forensic Reporting): Detailed PVM attribution and fee-tier yield analysis.", icon="📘")
-st.page_link("pages/02_growth_strategy.py", label="2026 GTM Blueprint (Strategic Framework): Rationale for the 'Wealth Management' pivot and capital allocation.", icon="🎯")
-st.page_link("pages/03_risk_terminal.py", label="Treasury Guard Protocols (Risk Mandate): Solvency stress-testing and delta-neutral hedging requirements.", icon="🛡️")
+# MATCHING FILENAMES: 01_Flux_Terminal.py, 02_Growth_Strategy.py, 03_Risk_Terminal.py
+st.page_link("pages/01_Flux_Terminal.py", label="Flux Revenue Autopsy (Forensic Reporting): Detailed PVM attribution and fee-tier yield analysis.", icon="📘")
+st.page_link("pages/02_Growth_Strategy.py", label="2026 GTM Blueprint (Strategic Framework): Rationale for the 'Wealth Management' pivot and capital allocation.", icon="🎯")
+st.page_link("pages/03_Risk_Terminal.py", label="Treasury Guard Protocols (Risk Mandate): Solvency stress-testing and delta-neutral hedging requirements.", icon="🛡️")
 
 st.write("")
 st.info("💡 **Navigation Note:** Use the sidebar or the clickable modules above to switch between terminals.")
