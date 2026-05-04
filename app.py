@@ -15,6 +15,8 @@ st.markdown("""
     .report-subtitle { font-size: 1.2rem; color: #64748b; margin-bottom: 25px; }
     .section-header { border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-top: 30px; font-weight: 700; color: #0f172a; }
     .rationale-box { background-color: #ffffff; border-left: 5px solid #2563eb; padding: 20px; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+    /* Minimize spacing between navigation links */
+    .stPageLink { margin-bottom: -15px; }
     </style>
     """, unsafe_allow_html=True)
 
@@ -26,8 +28,9 @@ st.write("---")
 # --- EXECUTIVE SUMMARY & EXTERNAL REFS ---
 st.markdown("### **I. Q1 Recovery Briefing**")
 st.markdown("""
-This terminal serves as an analytical workspace for the Aequitas protocol. Following the identification of a 
-**37% YoY revenue contraction (c. $13.3M deficit)**, this environment provides a data-driven framework to transition the protocol from transactional 'Swap' utility to a **Primary Financial Residency** model.
+This terminal serves as an nalytical workspace for the Aequitas protocol. Following the identification of a 
+**37% YoY revenue contraction (c. $13.3M deficit)**, this environment provides a data-driven framework
+to transition the protocol from transactional 'Swap' utility to a **Primary Financial Residency** model.
 """)
 
 # --- SECTION II: EXTERNAL DATA ---
@@ -40,7 +43,7 @@ st.markdown("""
 """)
 
 # --- SECTION III: INTERNAL MODULES ---
-st.markdown("<div class='section-header'>III. Analytical Workspaces & Intelligence Modules</div>", unsafe_allow_html=True)
+st.markdown("<div class='section-header'>III. Analytical Workspaces & Modules</div>", unsafe_allow_html=True)
 st.write("")
 
 # Internal navigation links - verify these match your exact filenames in the /pages folder
